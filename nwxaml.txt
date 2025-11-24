@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp36.NewWindow1"
+             Title="NewWindow1">
+
+    <ContentPage>
+        <ScrollView>
+            <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+                <HorizontalStackLayout>
+                  
+                    <Label Text="Gracz1" FontAttributes="Bold" FontSize="48"></Label>
+
+                   
+                    <Label Text="Gracz2" FontAttributes="Bold" FontSize="48"></Label>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label BackgroundColor="Black" HeightRequest="150" WidthRequest="150" TextColor="white" FontAttributes="Bold"></Label>
+                </HorizontalStackLayout>
+                <Button Margin="10,10,10,10" BackgroundColor="Gray" Text="Pytanie 1"></Button>
+                <Button Margin="10,10,10,10" BackgroundColor="Gray" Text="Pytanie 1"></Button>
+                <Button Margin="10,10,10,10" BackgroundColor="Gray" Text="Pytanie 1"></Button>
+
+
+           
+        </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage>
+
+
+</Window>

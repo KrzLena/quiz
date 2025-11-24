@@ -1,0 +1,21 @@
+namespace MauiApp36
+{
+    public partial class MainPage : ContentPage
+    {
+        int count = 0;
+
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+
+        private async void OnOpenWindowClicked(object sender, EventArgs e)
+        {
+
+
+            Application.Current.OpenWindow(new NewWindow1());
+
+        }
+    }
+}
