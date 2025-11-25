@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp36.MainPage"
-             BackgroundColor="Gray">
-
+             x:Class="nowaaplikacja.MainPage"
+             BackgroundColor="DimGray">
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
             <Label Text="Gracz1" FontAttributes="Bold" FontSize="48"></Label>
-            <Entry Background="Black" HeightRequest="150"></Entry>
+            <Entry  x:Name="inputEntry2" Background="Black" HeightRequest="150" TextColor="White" ></Entry>
             <Label Text="Gracz2" FontAttributes="Bold" FontSize="48"></Label>
-            <Entry Background="Black" HeightRequest="150"></Entry>
-            
+            <Entry x:Name="inputEntry" Background="Black" HeightRequest="150" TextColor="White"></Entry>
+
             <Button Text="Przejdz dalej" Clicked="OnOpenWindowClicked"></Button>
         </VerticalStackLayout>
     </ScrollView>
