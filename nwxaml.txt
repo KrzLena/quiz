@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Window xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp36.NewWindow1"
-             Title="NewWindow1">
-
-    <ContentPage>
-        <ScrollView>
-            <VerticalStackLayout
+             x:Class="nowaaplikacja.NewPage1"
+             Title="NewPage1"
+             Background="Gray">
+    <ScrollView>
+        <VerticalStackLayout
         Padding="30,0"
         Spacing="25">
-                <HorizontalStackLayout>
-                  
-                    <Label Text="Gracz1" FontAttributes="Bold" FontSize="48"></Label>
+            <HorizontalStackLayout>
 
-                   
-                    <Label Text="Gracz2" FontAttributes="Bold" FontSize="48"></Label>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <Label BackgroundColor="Black" HeightRequest="150" WidthRequest="150" TextColor="white" FontAttributes="Bold"></Label>
-                </HorizontalStackLayout>
-                <Button Margin="10,10,10,10" BackgroundColor="Gray" Text="Pytanie 1"></Button>
-                <Button Margin="10,10,10,10" BackgroundColor="Gray" Text="Pytanie 1"></Button>
-                <Button Margin="10,10,10,10" BackgroundColor="Gray" Text="Pytanie 1"></Button>
+                <Label x:Name="gracz1" Text="Gracz1" FontAttributes="Bold" FontSize="48" TextColor="White" Background="Black"></Label>
 
 
-           
+                <Label x:Name="gracz2" Text="Gracz2" FontAttributes="Bold" FontSize="48" Background="White"></Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label BackgroundColor="Black" HeightRequest="150" WidthRequest="350" Margin="10,10,10,10" TextColor="white" FontAttributes="Bold" Text="Ile kości ma kość" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+            </HorizontalStackLayout>
+            <Button x:Name="button1" Margin="10,10,10,10" BackgroundColor="DimGray" Text="tak z 20" Clicked="button1_Clicked"></Button>
+            <Button  x:Name="button2" Margin="10,10,10,10" BackgroundColor="DimGray" Text="okolo 30" Clicked="button1_Clicked"></Button>
+            <Button x:Name="button3" Margin="10,10,10,10" BackgroundColor="DimGray" Text="okolo 50" Clicked="button1_Clicked" Clicked="button3_Clicked"></Button>
+            <Button x:Name="button4" Margin="10,10,10,10" BackgroundColor="DimGray" Text="moze z 2" Clicked="button1_Clicked"></Button>
+
+
+
         </VerticalStackLayout>
-        </ScrollView>
-    </ContentPage>
-
-
-</Window>
+    </ScrollView>
+</ContentPage>
