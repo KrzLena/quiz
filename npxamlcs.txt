@@ -1,0 +1,23 @@
+namespace nowaaplikacja;
+
+public partial class NewPage1 : ContentPage
+{
+	public NewPage1()
+	{
+		InitializeComponent();
+	}
+
+    private void button1_Clicked(object sender, EventArgs e)
+    {
+		button1.BackgroundColor = Colors.Red;
+        button2.BackgroundColor = Colors.Red;
+        button3.BackgroundColor = Colors.Green;
+        button4.BackgroundColor = Colors.Red;
+        
+    }
+
+    private void button3_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new NewPage2());
+    }
+}
